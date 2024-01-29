@@ -17,6 +17,7 @@ def _req(term, results, lang, start, proxies, timeout):
             "num": results + 2,  # Prevents multiple requests
             "hl": lang,
             "start": start,
+            "tbm": "nws"
         },
         proxies=proxies,
         timeout=timeout,
